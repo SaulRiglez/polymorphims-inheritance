@@ -3,16 +3,16 @@ package com.yoprogramo;
 public class Tester {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
         new Tester();
     }
 
-    public Tester () {
+    public Tester() {
         Phone landLinePhone = new Phone();
         SmartPhone smartPhone = new SmartPhone();
         System.out.println("About to test a land line phone " +
-        "as a phone...");
+                "as a phone...");
         testPhone(landLinePhone);
         System.out.println("\nAbout to test a smart phone " +
                 "as a phone...");
@@ -24,7 +24,7 @@ public class Tester {
 
     }
 
-    private void testPhone( Phone phone) {
+    private void testPhone(Phone phone) {
         phone.callNumber(5559869447L);
         phone.isRinging();
     }
